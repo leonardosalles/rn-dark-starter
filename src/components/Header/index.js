@@ -3,13 +3,14 @@ import { Image, Platform } from 'react-native'
 import { DrawerActions } from '@react-navigation/native'
 import { HeaderIconButton, BackButtonContainer, BackButtonText, ColoredIcon } from './index.style'
 import { useNavigation } from '@react-navigation/native'
+import Images from '@app/static/images'
 
 function LogoTitle() {
   return (
     <Image
       style={{ width: 190, height: 50 }}
       resizeMode="contain"
-      source={require('../../static/images/logo.png')}
+      source={Images.logo}
     />
   )
 }

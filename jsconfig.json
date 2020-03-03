@@ -9,6 +9,9 @@
       "@app/themes/*": ["themes/*"],
       "@app/routes": ["routes"],
       "@app/context": ["context"],
+      "@app/screens": ["screens"],
+      "@app/screens/*": ["screens"],
+      "@app/images": ["images"]
     }
   }, 
 }

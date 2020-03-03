@@ -5,6 +5,8 @@
       "root": ["./src"],
       "alias": {
         "@app/components": "App/src/components",
+        "@app/static": "App/src/static",
+        "@app/screens": "App/src/screens",
         "@app/routes": "App/src/routes",
         "@app/themes": "App/src/themes",
         "@app/context": "App/src/context"

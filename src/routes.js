@@ -1,5 +1,5 @@
-import HomeNavigator from './screens/Home/navigator'
-import NotificationsNavigator from './screens/Notifications/navigator'
+import HomeNavigator from '@app/screens/Home/navigator'
+import NotificationsNavigator from '@app/screens/Notifications/navigator'
 
 export default [
   {
