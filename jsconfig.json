@@ -5,6 +5,10 @@
     "paths": {
       "@app/components": ["components"],
       "@app/components/*": ["components/*"],
+      "@app/actions": ["state/actions"],
+      "@app/actions/*": ["state/actions/*"],
+      "@app/reducers": ["state/reducers"],
+      "@app/reducers/*": ["state/reducers/*"],
       "@app/themes": ["themes"],
       "@app/themes/*": ["themes/*"],
       "@app/routes": ["routes"],

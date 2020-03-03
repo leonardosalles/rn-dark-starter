@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import { Text, StatusBar } from 'react-native'
 import { Container, ToggleThemeButton } from './index.style'
 import { withAppContext } from '@app/context'
@@ -7,11 +7,30 @@ import { useTheme } from '@app/themes'
 import DefaultButton from '@app/components/DefaultButton'
 import Icon from 'react-native-vector-icons/FontAwesome5'
 
+import { getUser, setUser, SET_USER } from '@app/actions/user'
+import userStore from '@app/reducers/user'
+
 function HomeScreen({ navigation }) {
   const theme = useTheme()
   const [ isDark, setIsDark ] = React.useState(false)
 
+  useEffect(() => {
+    // Watch every dispatch in user store
+    userStore.subscribe(() => {
+      // Get new state
+      const state = userStore.getState()
+
+      if (state.type === SET_USER) {
+        // Do whatever you want when user data is set
+        console.log('User action dispatch', state)
+      }
+    })
+  }, [])
+
   const toggleDarkTheme = () => {
+    userStore.dispatch(setUser({ name: 'Leonardo' }))
+    userStore.dispatch(getUser())
+
     if (isDark) {
       theme.change('Default')
       setIsDark(false)
