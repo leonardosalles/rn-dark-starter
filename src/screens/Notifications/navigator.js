@@ -7,12 +7,12 @@ const Stack = createStackNavigator()
 
 export default function NotificationsNavigator(props) {
   return (
-      <Stack.Navigator initialRouteName="Notifications">
-        <Stack.Screen
-          name="Notifications"
-          component={NotificationsScreen}
-          {...props}
-        />
-      </Stack.Navigator>
+    <Stack.Navigator initialRouteName="Notifications">
+      <Stack.Screen
+        name="Notifications"
+        component={NotificationsScreen}
+        {...props}
+      />
+    </Stack.Navigator>
   )
 }

@@ -6,6 +6,7 @@ export default function NotificationsScreen({ navigation }) {
   return (
     <Container>
       <DefaultButton onPress={() => navigation.goBack()} title="Go back home" />
+      <DefaultButton onPress={() => navigation.navigate('NotificationsSettings')} title="Open Modal" />
     </Container>
   )
 }
