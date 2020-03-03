@@ -1,5 +1,5 @@
 {
-  "compilerOptions": { 
+  "compilerOptions": {
     "moduleResolution": "node",
     "baseUrl": "src",
     "paths": {
@@ -10,5 +10,5 @@
       "@app/routes": ["routes"],
       "@app/context": ["context"],
     }
-  }
+  }, 
 }
